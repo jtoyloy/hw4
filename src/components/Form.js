@@ -17,7 +17,7 @@ const Form = (props) => {
   const onFormSubmit = (event) => {
     // to prevent page reload on form submit
     event.preventDefault()
-    props.handleSubmit(URL)
+    props.handleSubmit({name, URL})
     setName('')
     setURL('')
   }
